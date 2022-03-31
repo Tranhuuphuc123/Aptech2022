@@ -1,0 +1,14 @@
+﻿  bien_kieudulieu.c
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(7,10): warning C4476: 'scanf_s' : unknown type field character '.' in format specifier
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(7,18): warning C4474: 'scanf_s' : too many arguments passed for format string
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(7,18): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(11,10): warning C4476: 'scanf_s' : unknown type field character '.' in format specifier
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(11,18): warning C4474: 'scanf_s' : too many arguments passed for format string
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(11,18): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(15,10): warning C4476: 'scanf_s' : unknown type field character '.' in format specifier
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(15,18): warning C4474: 'scanf_s' : too many arguments passed for format string
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(15,18): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(19,10): warning C4476: 'scanf_s' : unknown type field character '.' in format specifier
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(19,18): warning C4474: 'scanf_s' : too many arguments passed for format string
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\bien_kieudulieu.c(19,18): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  C_canban.vcxproj -> G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\C_canban.exe
