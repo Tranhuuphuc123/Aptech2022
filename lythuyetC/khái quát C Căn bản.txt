@@ -1,0 +1,30 @@
+                                                                        ****LẬP TRÌNH C CĂN BẢN*******
+                                                                        
+**KHÁI QUÁT VỀ C
+ - Ngôn ngữ C do Dennish Richie phát minh vào những năm 60-70 của thế kỉ XX, dựa trên ngôn ngữ BCPL và B của Martin Richard và Ken Thomson.
+ - Ngôn ngữ C là một ngôn ngữ ban đầu viết để phát triển UNix, có tính mềm dẻo và có một thư viện lớn với các hàm (function) và hỗ trợ nhiều phép toán.
+ - Các đặc điểm của C:
+   + tính cô đọng (Compact): có 32 từ khóa & 40 toán tử
+   + tính cấu trúc (structured): viết rõ gàng tường minh...
+   + tính tương thích (compatible): do có thư viện lớn nên chạy đc ở mọi máy tính và hệ điều hành.
+   + tính linh động (flexible): uyển chuyển dễ thay đổi, thích ghi
+   + biên dịch (compile): chạy nhiều chương trình riêng lẻ thành các tập tin đói tượng (object), và liên kết các đối tượng đó lại thành 1 chương trình chạy thống nhất
+   (executable).
+   
+ - Cấu trúc của một chương trình C:
+  + Các lệnh tiền xử lý
+  + các hàm
+  + các biến
+  + các lệnh và biểu thức
+  + các comment chú thích
+  
+               >>vidu chương trình c căn bản:
+                              #include<stdio.h>                             // tiền xử lý, nhắc nhở thêm thư viên stdio
+
+                              int main()                                   // hàm main, nơi chương trình được chứa và thực thi
+                              {
+                                 /* Day la chuong trinh C dau tien */      // các ký hiệu // or /**/ là dòng ghi chú thích
+                                 printf("Hello, World! \n");               // lệnh prrintf để xuất ra màn hình
+
+                                 return 0;                                 // return 0 lệnh dùng kết thúc hàm main và trả về giá trị o;
+                              }
