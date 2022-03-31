@@ -1,0 +1,2 @@
+G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\C_canban.exe.lastcodeanalysissucceeded
+G:\Aptech2022\C\HOCLAPTRINHC\C_canban\x64\Debug\NativeCodeAnalysis.read.1.tlog
