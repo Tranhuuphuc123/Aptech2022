@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-	printf("hello moi nguoi \n");
+	printf("hello toi la phuc \n");
 
 	float a, b, c, d, tong, tich, thuong, hieu;
 	printf("nhap vao so a: ");
