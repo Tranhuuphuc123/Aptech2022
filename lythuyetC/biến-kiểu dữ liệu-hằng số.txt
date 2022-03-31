@@ -1,1 +1,12 @@
-
+                                 *******TÌM HIỂU VỀ KIỂU DỮ LIỆU ( DATA TYPES), BIẾN (VARIABLES) & HÀNG SỐ (CONSTANTS)******
+                                 
+**** DATA TYPES:
+  types được hiểu là các kiểu dữ liệu trong ngôn ngữ lập trình c, trong ngôn ngữ lập trình C có cá kiểu dữ liệu như sau:
+   - Kiểu cơ bản: Kiểu cơ bản là kiểu dữ liệu số học gồm 2 loại là kiểu số nguyên và dấu số thực dấu chấm động
+      + kiểu số nguyên: 
+            kiểu                cỡ lưu trữ              dãy giá trị
+            
+            char                 1 byte               -128 tới 127 or 0 tới 255
+            unsigned char        1 byte                0 tới 255
+            signed char          1 byte                -128 tới 127
+            int                  
