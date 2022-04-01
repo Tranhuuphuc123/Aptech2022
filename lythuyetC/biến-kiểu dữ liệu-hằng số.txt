@@ -10,3 +10,8 @@
             unsigned char        1 byte                0 tới 255
             signed char          1 byte                -128 tới 127
             int                  
+
+
+
+
+alo hữu phúc nè
