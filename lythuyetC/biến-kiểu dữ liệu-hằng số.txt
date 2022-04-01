@@ -4,14 +4,28 @@
   types được hiểu là các kiểu dữ liệu trong ngôn ngữ lập trình c, trong ngôn ngữ lập trình C có cá kiểu dữ liệu như sau:
    - Kiểu cơ bản: Kiểu cơ bản là kiểu dữ liệu số học gồm 2 loại là kiểu số nguyên và dấu số thực dấu chấm động
       + kiểu số nguyên: 
-            kiểu                cỡ lưu trữ              dãy giá trị
+            kiểu                 cỡ lưu trữ                 dãy giá trị
             
-            char                 1 byte               -128 tới 127 or 0 tới 255
-            unsigned char        1 byte                0 tới 255
-            signed char          1 byte                -128 tới 127
-            int                  
+            char( kiểu ký tự)      1 byte               -128 tới 127 or 0 tới 255
+             * unsigned char       1 byte                0 tới 255
+             * signed char         1 byte                -128 tới 127
+            int                   2byte-4byte           -32,768 tới 32,767 hoặc -2,147,483,648 tới 2,147,483,647
+             * unsigned int        2 byte-4byte           0 tới 65,535
+             * signed int          2 byte-4byte
+            short                  2 byte                -32,768 tới 32,767 
+             * unsigned short      2 byte                 0 tới 65,535
+            long                   4 byte
+             * unsigned long       4 byte
+    ----> ta co thể dùng hàm sizeof(types) để kiểm tra dãy giá trị trên code
+      + Kiểu số thực dấu chấm động (Floating-point)
+           
+           kiểu                   cỡ lưu trữ                dãy giá trị
+         float                     4 byte                   dùng hàm sizeof(float) để kiểm tra
+         double                    8 byte                    nt
+         long double               16 byte                   nt
 
 
-
-
-
+ - Kiểu void: Kiểu định danh đặc biệt khẳng định rằng kiểu không có gia trị
+ - kiểu chuỗi: gồm các mảng ký tự
+    + char s[length] = "string";
+       trong đó lenght là chiều dai chuỗi ta muốn
