@@ -1,0 +1,18 @@
+                                                      *****TOAN TU TRONG C****** 
+                                                      
+- Cac toan tu trong C:   
+
+ phep toan tu & (and): 2 thang 1 moi bang 1  con o voi 1 hoac 1 voi 0 deu bang 0
+ phep toan | ( or): chi can co 1 cai la 1 thi no se la 1, vd 00110  giong nhu co 1 cai true 1 cai false chỉ can co 1 cai la true thi no ra ket qua true
+                                                             11010
+                                                             11110
+                                                             
+phep toan xor (^): 1 voi 1 la 0, con 0 vs 1 hoac 1 voi 0 la 1.
+phep toan ~ num1 (not): lat nguoc lai ket qua vi du 0101 thanh 1010, bien 0 thnah 1 va 1 thanh 0
+  
+  
+  
+  **thứ tự ưu tiên trong toán tử thì: +-*/  --> tới toán tử so sánh( thứ tự ưu tiên từ trái sang phải) > < == !=  ---> phép toán logic and, or. not ( not tới and và tới or -->thứ tự ưu tiên thì từ phải  sang trái)
+    
+ *** thứ tự các dấu ngoặc trong toán tử là ưu tiên trc hết, ví dụ so sánh độ ưu tiên trên chỉ cần bỏ vào ngoặc ().. thì dù phép tính có độ ưu tiên thấp nhất vẫn 
+ được ưu tiên trên hết
