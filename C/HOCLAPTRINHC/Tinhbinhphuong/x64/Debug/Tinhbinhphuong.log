@@ -1,0 +1,3 @@
+﻿  Tinhbinhphuong.c
+G:\Aptech2022\C\HOCLAPTRINHC\Tinhbinhphuong\Tinhbinhphuong.c(13,7): warning C4013: 'getch' undefined; assuming extern returning int
+  Tinhbinhphuong.vcxproj -> G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\Tinhbinhphuong.exe

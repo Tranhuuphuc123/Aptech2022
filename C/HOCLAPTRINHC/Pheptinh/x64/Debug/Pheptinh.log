@@ -1,0 +1,3 @@
+﻿  nhap4so.c
+G:\Aptech2022\C\HOCLAPTRINHC\Pheptinh\nhap4so.c(27,7): warning C4013: 'getch' undefined; assuming extern returning int
+  Pheptinh.vcxproj -> G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\Pheptinh.exe
