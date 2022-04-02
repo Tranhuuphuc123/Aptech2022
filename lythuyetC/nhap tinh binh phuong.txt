@@ -1,0 +1,11 @@
+int a, b;
+
+		printf("nhap vao so a: ");
+		scanf_s("%d", &a);
+		printf("\n");
+
+		b = pow(a, 2);
+		printf("gia tri binh phuong cua a: %d^2=%d", a, b);
+		getch();
+
+		return 0;
