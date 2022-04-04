@@ -20,9 +20,10 @@ int main() {
 	printf("nhap vao ham so a: ");
 	scanf_s("%d", &a);
 	printf("\n");
-
+	
 	b = pow(a, 2);
-	printf("gia tri binh phuong cua a: a^%d = %d", a, b);
+	printf("gia tri binh phuong cua a: %d^2 = %d\n", a, b);
+
 	getch();
 	return 0;
 

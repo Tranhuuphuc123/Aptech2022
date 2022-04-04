@@ -1,17 +1,131 @@
-                                                      *****TOAN TU TRONG C****** 
-                                                      
-- Cac toan tu trong C:   
 
- phep toan tu & (and): 2 thang 1 moi bang 1  con o voi 1 hoac 1 voi 0 deu bang 0
- phep toan | ( or): chi can co 1 cai la 1 thi no se la 1, vd 00110  giong nhu co 1 cai true 1 cai false chỉ can co 1 cai la true thi no ra ket qua true
-                                                             11010
-                                                             11110
-                                                             
-phep toan xor (^): 1 voi 1 la 0, con 0 vs 1 hoac 1 voi 0 la 1.
-phep toan ~ num1 (not): lat nguoc lai ket qua vi du 0101 thanh 1010, bien 0 thnah 1 va 1 thanh 0
+                                                                                                          *****TOAN TU TRONG C****** 
+
+
+** Toán tử là một cách giao thức với trình biên dịch thông qua các phép toán quy định để thực thi một cách tính toán nào đó trong ngôn ngữ lập trình C.
+** Các loại toán tử trong lập trình C và đô ưu tiên của nó khi xuất hiện chung sẽ ntn ta cùng tìm hiểu:
+
+ - CÁC LOẠI TOÁN TỬ TRONG C:
+
+  + ARITHMETIC EXPRESSIONS ( TOÁN TỬ SỐ HỌC/ TOÁN HỌC)
+          Ngôn ngữ C cung cấp 5 toán tử toán học cơ bản:
+               stt     toán tử      tên            ví dụ          kết quả
+
+                1        +           cộng          5 +2              7
+	2        -            trừ	         5-2	             3
+	3        *           nhân           5*2               10
+	4        /             chia           6/2                3  
+	5       %        chia lấy dư     5%2              1   // 5%2 =2 dư 1
+
+
+  + TOÁN TỬ QUAN HỆ (RELATIONAL OPERATORS)
+         
+	stt     toán tử      tên                                 ví dụ            kết quả
+
+                1        ==          bằng                                5=5              1(true)
+	2        !=           #	                               5#2	   1(true)
+	3        >          lớn hơn                              1>2              0(false)
+	4        <          bé hơn                               2<3              0(false)  
+	5       >=     lớn hơn hoặc bằng                 5>=2            1(true)
+	6      <=      bé hơn hoặc bằng                  5<=2            0(false)
+
+
+  + TOÁN TỬ LUẬN LÍ (LOGICAL OPERATORS)
+             
+              stt     toán tử              tên                         ví dụ                                          kết quả
+
+                1        !           phủ định (NOT)              !(5>2)                    (5>2) la true(1) nhưng do no phủ định ! nên kết quả là (5<2) thì false(0)
+	2      &&        và (AND)	      ( 5>2)&&(5>6)	          0(false) vì phep AND được hiểu là cả hai vế đều đúng thì nó mới true(1)             
+	3        ||           hoặc (OR)                ( 5>2) || (5>6)	          1(true) vì phép ||(OR) thì chỉ cần có 1 trong 2 vế đúng thì nó đúng true(1)
+
+	
+
+
+
+  + TOÁN TỬ BITWISE HAY CÒN GỌI LÀ TOÁN TỬ BIT (BITWISE LOGICAL OPERATORS)
+          Đây là dạng toán tử dùng cho mã nguồn nhị phân ( biểu thị duới dạng cơ số thập phân)
+               stt                    toán tử                  tên                           ví dụ                   kết quả
+
+                1                        &           AND (num1 & num2)       1101&1110              1100 đối với toán tử & thì 1 với 1 là 1 còn lại 0vs1 hoặc 1vs0 đều là 0
+					                13 &  12	               12  // các số thập phân là đc quy đổi từ nhị phân ở trên ( xem lại bài học ve cach quy doi nhi                                                                                                                                                                                                                                           phan sang thap phan)
+	2                        ^	        XOR (num1 ^ num2)        	1101&1110             0011 đối với ^ (XOR) thì 1vs1 la 1 còn 0vs1 hoặc 1vs0 đều bằng 1.
+	3                         |            OR (num1 | num2)            1101|1110                1111 đối với | (OR của toán hạng bit) chỉ cần 1 vế của num1 or num2 có 1 thì thành 1.
+	4	          ~            NOT (~ num1)		~1101	              0010 đối với ~ (NOT của toán hạng bit) thì nó sẽ phủ định và đổi ngược kết quả 0 thành 1 và 1                                                                                                                                                                                                                                                                  thành 0
+	
+
+
+  + TOÁN TỬ GÁN 
+      Toán tử đường dùng để lưu giá trị cho một biến nào đó\ 
+
+                stt     toán tử            ví dụ             tương đương với
+
+                1        =                    x=5              gán 5 cho x
+	2       +=          	x+=5	    x = x+5
+	3       -=                    x-=5             x= x-5
+	4       *=                   x*=5             x= x*5  
+	5       /=                    x/=5              x= x/5
+                6      %=		x%=2	    x= x%2 phép chia lấy dư phải chia cho 2.
+
+
+   + TOÁN HẠNG TĂNG GIẢM (++, --)
+       thì phần này đã nói nhiều về vấn đề toán tử tăng giảm 
+          >> a++: toán hạng tăng dạng hậu tố của a
+          >> a-- :  toán  hạng giảm dạng hậu tố của a
+          -------------------> các dạng hậu tố thì sẽ xuất a ra trc rồi mới thực thi lệnh a++ hoặc a--
+              vd; nhập a =5
+                            a++, a=5 trc rồi mới thực thi a=a+1=5+1=6
+                            a--, a=6 trc rồi mới thực thi a=a-1=6-1=5.
+
+          >> --a: dạng tiền tố toán hạng giảm của a
+          >>++a: dạng tiền tố toán hạng cộng của a
+           -------------------> các dạng tiền tố thì sẽ thực thji ngay kết quả a nhập vào
+
+
+
+
+******************** THỨ TỰ ƯU TIÊN TRONG TOÁN HẠNG CUA C**************************
+ - Độ ưu tiên của toán tử được xếp từ trên xuống và môi hàng có độ ưu tiên riêng biệt
+     
+                **Loại**                              **toán hạng**                                                 **thứ tự ưu tiên**
+	       
+          Postfix( hậu tố, ngoặc)            () [] - > . ++ --				   từ trái sang phải	
+
+          Unary (toán 1 ngôi)	     +a(dương a)  -a(âm a) !(not của logical)		   từ  dưới lên và từ phải sang trái
+			      ~(not cua bit)  ++ -- (type)* sizeof
+     
+           Tính nhân	  	     * / %					   từ trái sang phải
+
+           Tính cộng trừ		     + -					   từ trái ang phải
+
+           Dịch chuyển		     << >>					   từ trái sang phải
+
+           Quan hệ	                   < <= > >=				   từ trái sang phải
+
+           Cân bằng		      ==  !=(#)		                                   từ trái sang phải
+
+           Phép AND của bit	     &     
+
+           Phép XOR của bit	      ^
+       
+           Phép OR của bit                  |
+
+           Phép AND của logic	      &&
+    
+           Phép OR của logic                ||
+  
+           Toán tử điều kiện                   ? :			                                    từ phải sang trái
+
+           Phép gán		    = += -= *= /= %= > >= < <= &= ^= |=                    từ phải sang trái
+        
+           dấu phẩy		,
+
+
+
+                                                      
+
   
   
-  
+ >>>>> Note:
   **thứ tự ưu tiên trong toán tử thì: +-*/  --> tới toán tử so sánh( thứ tự ưu tiên từ trái sang phải) > < == !=  ---> phép toán logic and, or. not ( not tới and và tới or -->thứ tự ưu tiên thì từ phải  sang trái)
     
  *** thứ tự các dấu ngoặc trong toán tử là ưu tiên trc hết, ví dụ so sánh độ ưu tiên trên chỉ cần bỏ vào ngoặc ().. thì dù phép tính có độ ưu tiên thấp nhất vẫn 

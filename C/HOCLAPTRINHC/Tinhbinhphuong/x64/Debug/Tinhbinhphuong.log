@@ -1,5 +1,4 @@
 ﻿  Tinhbinhphuong.c
-G:\Aptech2022\C\HOCLAPTRINHC\Tinhbinhphuong\Tinhbinhphuong.c(20,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-G:\Aptech2022\C\HOCLAPTRINHC\Tinhbinhphuong\Tinhbinhphuong.c(22,7): warning C4013: 'getch' undefined; assuming extern returning int
-  LINK : G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\Tinhbinhphuong.exe not found or not built by the last incremental link; performing full link
+G:\Aptech2022\C\HOCLAPTRINHC\Tinhbinhphuong\Tinhbinhphuong.c(24,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+G:\Aptech2022\C\HOCLAPTRINHC\Tinhbinhphuong\Tinhbinhphuong.c(27,7): warning C4013: 'getch' undefined; assuming extern returning int
   Tinhbinhphuong.vcxproj -> G:\Aptech2022\C\HOCLAPTRINHC\x64\Debug\Tinhbinhphuong.exe
