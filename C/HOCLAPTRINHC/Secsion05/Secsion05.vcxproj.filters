@@ -15,8 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="baitoanSwitch.c">
+    <ClCompile Include="bai05.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bai01.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bai02.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bai03.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bai04.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bai01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bai02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bai03.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bai04.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
