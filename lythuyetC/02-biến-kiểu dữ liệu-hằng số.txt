@@ -1,0 +1,109 @@
+                                 *******TÌM HIỂU VỀ KIỂU DỮ LIỆU ( DATA TYPES), BIẾN (VARIABLES) & HÀNG SỐ (CONSTANTS)******
+                                 
+**** DATA TYPES:
+  types được hiểu là các kiểu dữ liệu trong ngôn ngữ lập trình c, trong ngôn ngữ lập trình C có cá kiểu dữ liệu như sau:
+   - Kiểu cơ bản: Kiểu cơ bản là kiểu dữ liệu số học gồm 2 loại là kiểu số nguyên và dấu số thực dấu chấm động
+      + kiểu số nguyên: 
+            kiểu                 cỡ lưu trữ                 dãy giá trị
+            
+            char( kiểu ký tự)      1 byte               -128 tới 127 or 0 tới 255
+             * unsigned char       1 byte                0 tới 255
+             * signed char         1 byte                -128 tới 127
+            int                    2byte                -32,768 tới 32,767 hoặc -2,147,483,648 tới 2,147,483,647
+             * short int           1 byte
+             * unsigned int        2 byte                0 tới 65,535
+             * signed int          2 byte
+            short                  2 byte                -32,768 tới 32,767 
+             * unsigned short      2 byte                 0 tới 65,535
+            long                   4 byte
+             * unsigned long       4 byte
+             * long int            4 byte
+    ----> ta co thể dùng hàm sizeof(types) để kiểm tra dãy giá trị trên code
+      + Kiểu số thực dấu chấm động (Floating-point)
+           
+           kiểu                   cỡ lưu trữ                dãy giá trị
+         float                     4 byte                   dùng hàm sizeof(float) để kiểm tra
+         double                    8 byte                    nt
+         long double               16 byte                   nt
+          * long double            16 byte
+
+
+ - Kiểu void: Kiểu định danh đặc biệt khẳng định rằng kiểu không có gia trị
+ - kiểu chuỗi: gồm các mảng ký tự
+    + char s[length] = "string";
+       trong đó lenght là chiều dai chuỗi ta muốn
+       
+       
+       
+       
+       
+       
+       
+*****BIẾN ( VARIABLES):
+ - biến là cách người dùng đặt tên có ý nghĩa để đại diện cho vị trí của một vùng nhớ, tên biến giúp chúng ta truy cập vào vùng nhớ một cách dễ dàng mà không cần dùng địa chỉ của vùng nhớ đó. Hệ điều hành đảm nhiệm việc cấp bộ nhớ còn trống cho những biến này mỗi khi người dùng cần sử dụng. Ðể tham chiếu đến một giá trị cụ thể trong bộ nhớ, chúng ta chỉ cần dùng tên của biến.
+ 
+  - Cách khai báo biến:
+      Types(kiểu dữ liệu) + variablenames( tên biến) = value( giá trị sau phép gán "=").
+  - Các kiểu biến trong C:
+    + biến local:
+           Một biến được khai báo bên trong hàm hoặc khối lệnh được gọi là biến địa phương ( local).
+           vd:
+                             #include<stdio.h>
+                             int main() {
+                                 int x = 10; // bien x là biến local
+                              }
+    + Biến global(biến toàn cầu):
+          Một biến được khai báo bên ngoài hàm hoặc khối lệnh được gọi là biến toàn cầu. Bất kỳ hàm nào cũng có thể thay đổi giá trị của biến toàn cầu. Nó có sẵn cho          tất cả các chức năng.
+          vd;
+                             int y = 20; // bien y là biến global
+                             #include<stdio.h>
+                             int main() {
+                                 int x = 10; // bien x là biến local
+                              }
+    + Biến Static ( biến tĩnh):
+         Một biến được khai báo với từ khóa static được gọi là biến tĩnh, nó giữ lại giá trị của nó sau nhiều lần gọi hàm.
+         vd:
+                              #include<stdsio.h>
+                              int main() {
+                                  int x = 10; // bien local
+                                  static int y = 10; // bien static
+                                  x = x + 1;
+                                  y = y + 1;
+                                  printf("\n %d, %d", x, y);
+                                }
+                                
+    + Biến automatic:
+         Tất cả các biến trong C được khai báo trong khối lệnh, là các biến tự động theo mặc định. Bởi chúng ta có thể khai báo một cách rõ ràng biến tự động bằng cách        sử dụng từ khóa auto.
+         vd:
+                                  #include<stdio.h>
+                                  void main(){  
+                                      int x = 10; // bien local (cung la bien automatic)
+                                      auto int y = 20; // bien automatic
+                                      // cả hai đều có thể xem là biến auto
+                                  }
+           
+   + Biến Externals: 
+        Chúng ta có thể chia sẻ một biến trong nhiều tập tin mã nguồn C bằng cách sử dụng biến external. Để khai báo biến bên ngoài, bạn cần sử dụng từ khóa extern
+        vd:
+           File: myfile.h
+                           extern int x = 10; // bien external variable (cung la bien global)
+           file text.c: chèn vô định nghĩa
+                          #include "myfile.h" // chèn thư viện mà có  định nghĩa biến kiểu externals 
+                          int main() {
+                              printValue();
+                          }
+
+                          int printValue() {
+                              printf("x: %d", x);
+                          }
+                      --->> lúc này giá trị x xuất ea sẽ là 10 thèo định nghĩa externals từ thư viện myfile.h
+                      
+                      
+**** HẰNG SỐ TRONG LẬP TRÌNH C (CONSTANTS):
+   - hằng số cũng giống như biến, khác ở chỗ thì khi khai báo hằng số thì giá trị của hằng sẽ không thay đổi và cố định
+   - cách khai báo hằng số:
+                 constant +types(kiểu dữ liệu) + tên hằng(đặt như cách đặt tên biến) = value (giá trị sau phép gán "=").
+                 vd: 
+                     constant int x = 10;
+                     // giá trị x = 10 sẽ không thay đổi dù cho có gáng x = bao nhiêu, mặc khác việc gáng giá trị x sẽ làm lỗi chương trình thực thi.
+    

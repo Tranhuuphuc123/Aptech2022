@@ -1,0 +1,31 @@
+********HÀM INPUT VÀ OUTPUT TRONG LẬP TRÌNH C*******************
+
+ trong lập trình C ngoài hai hàm input và output truyền thống là printf() và scanf() thì ta có thêm 2 sự thay thế nữa đó là getchar() và putchar()
+ 
+- HÀM INPUT GETCHAR() THAY THẾ HÀM SCANF()
+    + ví dụ code: 
+         #include<stdio.h>
+         int main(){
+              int a;
+              printf("nhap vao gia tri a: );
+              // thay vi gan gia tri bang scanf() ta thay the bang getchar()
+              a = getchar();
+              
+              printf("xuat gia tri a: %d ", a);
+              getch();
+              return 0;
+           }
+           
+           
+- HÀM OUTPUT PUTCHAR() THAY THẾ PRINTF()
+       
+       + Ví dụ code:
+            #include<stdio.h>
+            int main(){
+              putchar('in ra gia tri thay the');
+              putchar('\n')
+              putchar('hello mọi người');
+              
+              getch();
+              return 0;
+            }
