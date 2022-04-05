@@ -93,7 +93,7 @@ ví dụ code:
 >>> NESTED IF-ELSE (ĐIỀU KIỆN LỒNG TRONG ĐIỀU KIỆN)
   trường hợp này xét tới các điệu kiện nhỏ hơn nằm trong các điều kiện lớn hơn
    vidu code:
-                      int main(){
+                 int main(){
 	         int x,y;
 	         printf("nhap vao gia tri tu 1-3: ");
 	         scanf("%d",&x);
@@ -102,11 +102,11 @@ ví dụ code:
 		    printf("cho phep nhap tiep gia tri tu 1-5: ");
 		    scanf("%d",&y);
 		   
-		    if(y<=5){ printf("giá tri y nhap la %d",y); }
-                                    else{ printf("gia tri y vuot qua 5"); }
-                            }else{
-		    printf("gia tri nhap vao %d # 1 ",x);	
-		}
-		return 0;	
-	         }    
+		         if(y<=5){ printf("giá tri y nhap la %d",y); }
+                          else{ printf("gia tri y vuot qua 5"); }
+                     }else{
+		       printf("gia tri nhap vao %d # 1 ",x);	
+		        }
+		      return 0;	
+	           }    
    
