@@ -49,6 +49,8 @@
         default: khối lệnh n+1;  // default giống như else cúi cùng so các đk sai thì nó thực thi mặc định khối lệnh sau cùng.
         
     }
+    
+    >>note: lưu ý với Switch thì phải sài kiểu dữ liệu int và case ( biểu thức đk phải tham chiếu một giá trị rõ ràng không đặt đk ở đây).
 
 
 
