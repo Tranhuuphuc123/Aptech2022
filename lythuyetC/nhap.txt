@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+int i,j,ch;
+
+printf("enter: ");
+scanf("%d",&ch);
+printf("\n");
+// cach 01
+/*
+ for(i=1;i<=ch;i++){
+     //ch la so nhap vao de ra so luong bang cuu chuong
+    printf("----bang cuu chuong %d----",i);
+    printf("\n");
+    for(j=1;j<=10;j++){
+        printf("%d x %d = %d",i,j,i*j);
+        printf("\n");
+      }
+      printf("\n");
+     }
+     return 0;*/
+
+
+
+
+     //cach 02 dung de nhap va xuat ra ngay bang cuu chuong minh muon
+     for(i=1;i<=10;i++){
+         printf(" %d x %d = %d",ch,i,i*ch);
+         printf("\n");
+
+     }
+     return 0;
+}
