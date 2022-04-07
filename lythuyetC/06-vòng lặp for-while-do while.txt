@@ -1,0 +1,105 @@
+                                                  **************VÒNG LẶP LOOP**************
+
+ -Khi tiến hành lập trình có thể bạn sẽ gặp phải tình huống đó là một khối mã cần được thực thi nhiều lần. vÌ vậy
+ vòng lặp Loop cho phép chúng ta thực hiện một câu lệnh hoặc một nhóm các câu lệnh nhiều lần, có các loại vòng lặp
+ như sau:
+ 
+  >> VÒNG LẶP FOR:
+    - For loop là một cấu trúc điều khiển lặp lại cho phép bạn viết một cách hiệu quả một vòng lặp và cần phải thực hiện khai báo cụ thể:
+    - cú pháp:
+           for ( init; condition; increment ) {
+                    statement(s);
+                }
+               
+               
+              + trong đó: 
+                > Init được thực thi đầu tiên, và chỉ một lần. Bước này cho phép bạn khai báo và khởi tạo bất kỳ biến điều khiển vòng lặp nào (vd: i=1..).
+                
+                > condition là điều kiện được đánh giá. Nếu nó là đúng, phần thân của vòng lặp được thực thi. Nếu nó sai, phần thân của vòng lặp không thực thi 
+                và luồng điều khiển nhảy đến câu lệnh kế tiếp ngay sau vòng lặp for.
+                
+                > Increment (i++ or i--): Sau khi vòng lặp for thực hiện, luồng điều khiển nhảy ngược lại câu lệnh tăng dần. Câu lệnh này cho phép bạn cập nhật 
+                bất kỳ biến điều khiển vòng lặp nào. Câu lệnh này có thể để trống, miễn là dấu chấm phẩy xuất hiện sau điều kiện.
+                
+                > Statement(s): lệnh thực thi được đánh giá lại. Nếu nó là true, vòng lặp thực hiện khối lệnh trong for này, quá trình sẽ lặp lại chính nó và nếu 
+                điều kiện sai, vòng lặp for chấm dứt.
+                
+              + vd:   
+                            #include<stdio.h> 
+                            int main(){
+                                for(int i = 0; i &lt; 3; i++){
+                                    printf("BkitSoftware!\n");
+                                }
+                                // Continue ...
+                                printf("Ket thuc vong lap!\n");
+                            }
+                
+                                             Giải thích code:
+                                > Gán biến lặp i = 0
+                                > Kiểm tra điều kiện (i = 0) < 3 => Đúng
+                                > Do kiểm tra điều kiện đúng => Thực hiện thân vòng lặp for
+                                > Gọi tới (i++) => tăng i lên 1 đơn vị => i = 1
+                                > Kiểm tra điều kiện (i = 1) < 3 => Đúng
+                                > Do kiểm tra điều kiện đúng => Thực hiện thân vòng lặp for
+                                > Gọi tới (i++) => tăng i lên 1 đơn vị => i = 2
+                                > Kiểm tra điều kiện (i = 2) < 3 => Đúng
+                                > Do kiểm tra điều kiện đúng => Thực hiện thân vòng lặp for
+                                > Gọi tới (i++) => tăng i lên 1 đơn vị => i = 3
+                                > Kiểm tra điều kiện (i = 3) < 3 => Sai => Kết thúc vòng lặp.
+                                
+                                
+                                
+                                
+   >> VÒNG LẶP WHILE:
+     - cú pháp:
+     
+               while (condition) {
+                   statement(s)
+                }
+                
+            Ở đây, (các) câu lệnh có thể là một câu lệnh đơn hoặc một khối câu lệnh. Điều kiện có thể là bất kỳ biểu thức nào và là bất kỳ giá trị nào khác. 
+        Vòng lặp lại trong khi điều kiện là đúng. Khi điều kiện trở thành sai, điều khiển chương trình sẽ chuyển đến dòng ngay sau vòng lặp.
+        
+      - ví dụ code:
+      
+      
+      
+    >> VÒNG LẶP DO...WHILE:
+      - CÚ PHÁP:
+                       do {
+                            statement(s);
+                       } while( condition );
+                       
+               > Không giống như vòng lặp for và while tiến hành kiểm tra điều kiện lặp ở đầu vòng lặp, do ... while trong lập trình C kiểm tra tình trạng 
+            của nó ở dưới cùng của vòng lặp. Vòng lặp do ... while tương tự như một vòng lặp while, ngoại trừ một thực tế rằng nó được thực hiện ít nhất một lần.
+            
+               > Lưu ý rằng biểu thức điều kiện xuất hiện ở cuối vòng lặp, do đó (các) câu lệnh trong vòng lặp thực hiện một lần trước khi điều kiện được kiểm tra.
+            Nếu điều kiện là đúng, luồng điều khiển nhảy trở lại để làm, và (các) câu lệnh trong vòng lặp thực hiện lại. Quá trình này lặp lại cho đến khi điều kiện 
+            đã cho trở thành sai.
+            
+            
+        - ví dụ code
+        
+        
+        
+        
+        
+  >> VÒNG LẶP VÔ HẠN:
+     code:
+                #include
+                int main () {
+                  for( ; ; ) {
+                     printf("This loop will run forever.\n");
+                  }
+                  return 0;
+                }
+                
+       > Một vòng lặp trở thành một vòng lặp vô hạn nếu một điều kiện không bao giờ trở thành sai. Các vòng lặp theo truyền thống được sử dụng cho mục đích này, 
+       vì không có biểu thức nào trong số ba biểu thức tạo thành vòng lặp for là bắt buộc, bạn có thể tạo vòng lặp vô tận bằng cách để trống biểu thức điều kiện.
+       
+       > Khi biểu thức điều kiện để trống, nó được giả định là đúng. Bạn có thể có một biểu thức khởi tạo và gia tăng, nhưng các lập trình viên C thường sử dụng 
+       cấu trúc for (;;) để biểu thị một vòng lặp vô hạn. Bạn có thể chấm dứt vòng lặp vô hạn bằng cách nhấn các phím Ctrl + C.
+       
+       
+       
+            
