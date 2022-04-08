@@ -7,7 +7,8 @@ int  main() {
 	int diem;
 
 	// cach 01
-	printf("enter your point: ");
+	
+    printf("enter your point: ");
 	scanf_s("%d", &diem);
 	printf("\n");
 
