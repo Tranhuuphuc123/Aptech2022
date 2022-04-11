@@ -1,32 +1,70 @@
 #include<stdio.h>
 int main(){
-int i,j,ch;
-
-printf("enter: ");
-scanf("%d",&ch);
-printf("\n");
-// cach 01
 /*
- for(i=1;i<=ch;i++){
-     //ch la so nhap vao de ra so luong bang cuu chuong
-    printf("----bang cuu chuong %d----",i);
+    int n;
+    printf("enter the num n: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for(int i=0; i<n;i++){
+        printf("phan tu thu: %d \n", i+1);
+        scanf("%d", &arr[i]);
+    }
+    // in cac phan tu
+
+    printf("-------------\n");
+
+    for(int i=0;i<n;i++){
+        printf(" %d ", arr[i]);
+    }
+
+    // tim max min
+    int max, min;
+    max=min=arr[0];
+
+    for(int i=0; i<n;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        if(arr[i]<min){
+            min = arr[i];
+        }
+    }
+    printf("gia tri max: %d \n", max);
+    printf("gia tri min: %d\n", min);*/
+
+
+
+    // bai 02 tim chan le
+
+    int n,i;
+
+    printf("enter the num n: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for(i=0;i<=n;i++){
+        printf("nhap lan thu %d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    for(i =0; i<n;i++){
+        printf(" %d ", arr[i]);
+    }
     printf("\n");
-    for(j=1;j<=10;j++){
-        printf("%d x %d = %d",i,j,i*j);
-        printf("\n");
-      }
-      printf("\n");
-     }
-     return 0;*/
 
+    int chanle;
+    printf("hien thi cac so o vi tri le: \n");
+    printf("-----------\n");
 
-
-
-     //cach 02 dung de nhap va xuat ra ngay bang cuu chuong minh muon
-     for(i=1;i<=10;i++){
-         printf(" %d x %d = %d",ch,i,i*ch);
-         printf("\n");
-
-     }
-     return 0;
+    printf("\n");
+    for(i=0;i<n;i++){
+        if(i%2!=0){
+            printf(" %d ", arr[i]);
+        }
+    }
+ 
+    return 0;
 }
