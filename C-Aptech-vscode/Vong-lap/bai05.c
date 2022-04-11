@@ -110,8 +110,8 @@ int main(){
 
 
     // bai tap bo sung tinh tong cac so nguyen duong tat ra tu so nguyen ban dau nhap vao gia
-
-    int n, tachSo, tong = 0;
+    /*
+      int n, tachSo, tong = 0;
 
     printf("\n enter the num n: ");
     scanf("%d", &n);
@@ -123,14 +123,38 @@ int main(){
     while(n!=0){
         
         tachSo = n%10;// chia lấy dư cho 10 để ra tach so ra vd 12%10 se duoc 1 du 2, luc nay da tach 1 va 2 
-        n /=10; /* dung phep chia nguyen de xoa so cui n vd kieu int hieu la 12/10=1.2 thi tuc la 1 khong lay phan
-                phan thap phan sao dau phay
-              */
+        n /=10; // dung phep chia nguyen de xoa so cui n vd kieu int hieu la 12/10=1.2 thi tuc la 1 khong lay phan
+                // phan thap phan sao dau phay
+              
         tong += tachSo;
         printf(" %d ",tachSo);
         
         
     }
-    printf("\n tong cac so nguyen duong cua n la: %d", tong);
+    printf("\n tong cac so nguyen duong cua n la: %d", tong);*/
+
+
+
+
+
+    // bai tap bo sung
+   // cach 01
+   
+    int n, P = 1;
+
+    do{     
+            printf("\n enter the num n: ");
+            scanf("%d",&n);
+    }while(n<=1);
+
+    for(int i=1; i<=(2*n); i++){
+        if(i%2==0){
+            printf(" %d ", i);
+            P *= i;
+        }
+    }
+
+    printf("\n tich cua P la: %d",P);
+    
     return 0;
 }
