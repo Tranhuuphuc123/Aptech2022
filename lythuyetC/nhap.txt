@@ -1,70 +1,117 @@
 #include<stdio.h>
 int main(){
-/*
-    int n;
-    printf("enter the num n: ");
-    scanf("%d", &n);
-
-    int arr[n];
-
-    for(int i=0; i<n;i++){
-        printf("phan tu thu: %d \n", i+1);
-        scanf("%d", &arr[i]);
-    }
-    // in cac phan tu
-
-    printf("-------------\n");
-
-    for(int i=0;i<n;i++){
-        printf(" %d ", arr[i]);
-    }
-
-    // tim max min
-    int max, min;
-    max=min=arr[0];
-
-    for(int i=0; i<n;i++){
-        if(arr[i]>max){
-            max=arr[i];
-        }
-        if(arr[i]<min){
-            min = arr[i];
-        }
-    }
-    printf("gia tri max: %d \n", max);
-    printf("gia tri min: %d\n", min);*/
-
-
-
-    // bai 02 tim chan le
-
-    int n,i;
-
-    printf("enter the num n: ");
-    scanf("%d", &n);
+    int i, n;
+    /*
+    printf("enter the num n in arr: \n");
+    scanf("%d",&n);
+    printf("--------------­\n");
 
     int arr[n];
 
     for(i=0;i<=n;i++){
-        printf("nhap lan thu %d: ", i+1);
+        printf("enter the num %d: ", i+1);
         scanf("%d", &arr[i]);
     }
+     printf(" cac so chan trong day so mang 1 chieu la:  \n");
+     printf("---------------\n");
 
-    for(i =0; i<n;i++){
-        printf(" %d ", arr[i]);
-    }
-    printf("\n");
-
-    int chanle;
-    printf("hien thi cac so o vi tri le: \n");
-    printf("-----------\n");
-
-    printf("\n");
-    for(i=0;i<n;i++){
-        if(i%2!=0){
+    for(i=0;i<=n;i++){
+        if(arr[i]%2==0){
             printf(" %d ", arr[i]);
         }
     }
- 
+    printf("\n");*/
+
+
+
+
+
+    // cau c: tinh tong cac so nguyen trong day
+   /* do{
+        printf("enter the num n: ");
+        scanf("%d",&n);
+    }while(n<1);
+    printf("-----------\n");
+
+    int arr[n];
+    for(i=0;i<=n;i++){
+        printf("enter the num %d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+    int tong = 0;
+
+    printf("tong cac so nguyen la: \n");
+    printf("-------------\n");
+    for(i=0;i<=n;i++){
+        tong += arr[i];
+        if(i==n){
+            printf(" %d =",arr[i]);
+        }else{
+            printf(" %d +", arr[i]);
+        }
+    }
+
+
+    printf(" %d", tong);*/
+
+
+
+
+
+
+    // cau d: tinh trung binh day so
+/*
+    do{
+        printf("enter the num n: ");
+        scanf("%d",&n);
+    }while(n<1);
+    printf("-----------\n");
+
+    int arr[n];
+    for(i=0;i<=n;i++){
+        printf("enter the num %d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+    int tong = 0;
+    int tbc;
+
+    printf(" tinh tbc cac so nguyen la: \n");
+    printf("-------------\n");
+    for(i=0;i<=n;i++){
+        tong += arr[i];
+        printf(" %d ", arr[i]);
+    }printf("\n");
+    printf("---------\n");
+
+    printf(" tong: %d \n", tong);
+
+    tbc = tong/3;
+
+    printf("tbc bai toan la: ( %d )/3 = %d",tong, tbc);*/
+    //cach 02 cau d
+
+    int i, n;
+    do{
+        printf("enter the num n: ");
+        scanf("%d", &n);
+    }while(n<0);
+     printf("----\n");
+
+    int arr[n];
+     for(i=0;i<n;i++){
+         printf("enter the num %d: ", i+1);
+         scanf("%d", &arr[i]);
+     }
+     int tbc=0, tong=0;
+     printf("Trung binh cong: (");
+     for(i=0;i<n;i++){
+         tong+=arr[i];
+         if(i==n-1)
+            printf("%d)", arr[i]);
+         else
+            printf("%d + ", arr[i]);
+     }
+     printf("/ %d = %.2f",n,(float)tong/n);
+
     return 0;
 }
