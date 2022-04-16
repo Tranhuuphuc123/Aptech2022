@@ -1,0 +1,35 @@
+int n;
+    do{
+        printf("Nhap vao 1 so nguyen lon hon 2 va nho hon 15: ");
+        scanf("%d", &n);
+    } while(n<=2 || n>=15);
+    int arr[n];
+    for(int i=0; i<n;i++){
+        printf("Nhap vao so nguyen thu %d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    printf("\n\n");
+    int buff=0;
+    for(int i=0;i<n;i++){
+        // Sắp xếp dãy số bằng cách so sánh và đổi vị trí
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>arr[j]){
+                buff=arr[i];
+                arr[i]=arr[j];
+                arr[j]=buff;
+            }
+        }
+        // In dãy số sau mỗi vòng sắp xếp
+        printf("Lan %d: ", i+1);
+        for(int k=0;k<n;k++){
+            printf("%d\t",arr[k]);
+        }
+        printf("\n");
+    }
+
+    printf("\n\nDay so sau khi sap xep: ");
+    for(int i=0;i<n;i++){
+        printf("%d\t",arr[i]);
+    }
+chỉnh lại xíu nha, nhìn cho dễ hơn
