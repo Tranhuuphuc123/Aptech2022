@@ -18,5 +18,6 @@ int main() {
 	printf("luong cua ban la %lf\n", luong);
 	printf("tuoi cua ban la: %d", tuoi);
 
+
 	return 0;
 }
