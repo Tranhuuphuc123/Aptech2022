@@ -1,0 +1,48 @@
+********** MANG TRONG LAP TRINH C **********
+
+1/ Khai niem:
+  - Mảng (array) trong C là một tập hoặc một nhóm các phần tử (dữ liệu) có kiểu dữ liệu đồng nhất(tương tự). 
+  Các phần tử của mảng được lưu trong các vùng nhớ liên tiếp.
+
+  >> MẢNG 1 CHIỀU:
+    - Mảng là một tập hợp tuần tự các phần tử có cùng kiểu dữ liệu và các phần tử được lưu trữ trong một dãy các ô nhớ liên tục trên bộ nhớ. 
+   Các phần tử của mảng được truy cập bằng cách sử dụng “chỉ số”.  Mảng có kích thước N sẽ có chỉ số từ 0 tới N – 1.
+
+    - Để khai báo, chúng ta cần 2 yếu tố sau:
+        + Kích thước của mảng: Việc này xác định số lượng phần tử có thể được lưu trữ trong mảng.
+        + Kiểu dữ liệu của mảng: Việc này chỉ định kiểu dữ liệu của các phần tử trong mảng; là số nguyên, số thực, 
+        ký tự hay là kiểu dữ liệu nào đó.
+
+   \> cấu trúc: <TYPE><ARRAY_NAME>[SIZE];
+
+   \> ví dụ code khai báo để nhập và xuất 1 mảng cơ bản:
+
+            #include<stdio.h>
+            int main(){
+                int n, i;
+
+                printf("enter the num n: ");
+                scanf("%d", &n);
+
+                int arr[n];    // khai bao gia trị mảng ar[n]
+                for(i=0;i<n;i++){
+                    // đoạn code giúp nhập từng phần tử của mảng theo vòng lặp từ 0 tới giá trị n 
+                    printf("enter the num %d: ", i+1);
+                    scanf("%d", &arr[i]);
+                }
+
+                printf("xuat cac gia tri mang \n");
+                printf("-----------\n");
+                
+                for(i=0;i<n;i++){
+                    // đoạn code để xuất cắc giá trị phần tử đã nhập vào
+                    printf(" %d ", arr[i]);
+                }
+                return 0;
+            }
+
+-------->>> như vậy theo cách khai báo của mảng ta có thể nhập tùy ý số lượng phần tử input và xuất output ra bên ngoài mà
+không cần phải viết hàng ngàn dòng code tốn nhiều thời gian.
+
+
+
