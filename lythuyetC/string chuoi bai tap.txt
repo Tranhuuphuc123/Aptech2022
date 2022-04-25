@@ -1,0 +1,145 @@
+bai 01
+
+                  #include<stdio.h>
+              int main(){
+
+                  char s[50];
+                  printf("enter the negative interger: ");
+                  gets(s);
+
+                  int i = 0, sna=0;
+                  for(i=0;i<strlen(s);i++){
+                      if(s[i]=='A' || s[i]=='a' || s[i]=='E' || s[i]=='e' || s[i]=='I' || s[i]=='i' || s[i]=='O'
+                      || s[i]=='o' || s[i]=='U' || s[i]=='u'){
+                          sna++;
+                      }
+                  }
+
+                  printf("cac so nguyen am: %d ", sna);
+                  printf("\n");
+                  return 0;
+
+
+
+              }
+              
+              
+              
+              
+              
+  bai 02
+  
+                   #include<stdio.h>
+              int main(){
+                  char s[50];
+                  printf("enter the strings:  ");
+                  gets(s);
+
+
+                  int i , kt=0;
+
+                  for(i=0;i<strlen(s);i++){
+                      if(s[i]==' '){
+                          kt++;
+                      }
+                  }
+                  printf("so khoang trang la:  %d  ", kt);
+                  printf("\n");
+                  return 0;
+
+
+              }
+              
+              
+              
+     bai 03
+     
+     
+     
+        #include<stdio.h>
+int main(){
+    char s[50];
+    printf("enter the strings:  ");
+    gets(s);
+
+
+    int i , dem=0;
+    char B;
+    printf("enter the char for search: ");
+    scanf("%c", &B);
+    for(i=0;i<strlen(s);i++){
+        if(s[i]==B){
+            dem++;
+        }
+        
+    }
+    printf("so lan xuat hien cua ky tu can tim la:  %d  ", dem);
+    printf("\n");
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+bai 05
+
+
+
+    #include<stdio.h>
+
+int arr_sum(int arr[], int n);
+
+int main(){
+    int n,i;
+
+    printf("enter the num n: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    for(i=0;i<n;i++){
+        printf("enter the num %d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+    printf(" total interger = %d ", arr_sum(arr,n));
+    printf("\n");
+    return 0;
+
+}
+
+
+
+int arr_sum(int arr[], int n){
+    int total=0;
+    for(int i=0; i<n; i++){
+        printf(" %d ", arr[i]);
+        total+=arr[i];
+    }
+    return  total;
+}
+
+
+
+  bai 06
+  
+  
+   #include<stdio.h>
+int main(){
+    char name[50], lastname[50];
+
+    printf("enter the name of you: \n");
+    gets(name);
+    printf("enter the lastname of you: \n");
+    gets(lastname);
+
+    printf("output value: %s ", strcat(lastname, name));
+    printf("\n");
+    return 0;
+
+}
+
+
