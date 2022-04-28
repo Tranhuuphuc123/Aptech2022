@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+ struct loaixe{
+        char nhanHieu[30];
+        char nhaSanXuat[30];
+        int year;
+        float triGia;
+        int soLuong;
+    };
+int main(){
+    struct loaixe loaixe1;
+
+    struct loaixe mangxe[3];
+    for(int i= 0; i<3; i++){
+            printf("enter the label of car: ");
+            scanf("%s", &mangxe[i].nhanHieu);
+            printf("enter the producer: ");
+            scanf("%s", &mangxe[i].nhaSanXuat);
+            printf("enter the year: ");
+            scanf("%d", &mangxe[i].year);
+            printf("enter the value of car: ");
+            scanf("%f", &mangxe[i].triGia);
+            printf("enter the num of car: ");
+           scanf("%d", &mangxe[i].soLuong);
+
+    }
+    printf("----------------\n");
+    printf(" output of information \n");
+
+    for(int i=0; i<3;i++){
+            printf("label: %s\n", mangxe[i].nhanHieu);
+            printf("producer: %s\n", mangxe[i].nhaSanXuat);
+            printf("year: %d\n", mangxe[i].year);
+            printf("value of car: %f\n", mangxe[i].triGia);
+            printf("quanlity (soluong): %d", mangxe[i].soLuong);
+
+    }
+    
+    return 0;
+
+
+}
+
+
+
+
+
+
