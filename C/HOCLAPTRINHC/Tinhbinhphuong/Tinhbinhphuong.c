@@ -16,15 +16,14 @@ int main() {
 
 
 	// cach 2
-	int a, b;
+	int a, bp;
 	printf("nhap vao ham so a: ");
-	scanf_s("%d", &a);
+	scanf("%d", &a);
 	printf("\n");
 	
-	b = pow(a, 2);
-	printf("gia tri binh phuong cua a: %d^2 = %d\n", a, b);
+	bp = pow(a, 2);
+	printf("gia tri binh phuong cua a: %d^2 = %d\n", a, bp);
 
-	getch();
 	return 0;
 
 }
